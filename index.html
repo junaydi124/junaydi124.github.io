@@ -1,49 +1,40 @@
-<html>
- <head>
- <title>Title of the document</title>
- <style>
- #defaultBlock {
- display: table;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
 
- }
- div {
- float: left;
- height: 470px;
- width: 300px;
- padding: 10px;
- }
- #block1 {
- background-color: #F54927;
- }
- #block2 {
- background-color: #34D104;
- width: 250px;
- }
- #block3 {
- background-color: #1B17E3;
- width: 250px;
+header {
+  background-color: #0a2540;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
 
-      }
- h2 {
- text-align: center;
- }
- </style>
- </head>
- <body>
- <main id="defaultBlock">
- <h2>Main Page Title</h2>
- <div id="block1">
- <h2>Title 1</h2>
- Random Text
- </div>
- <div id="block2">
- <h2>Title 2</h2>
-content
- </div>
- <div id="block3">
- <h2>Title 3</h2>
- content
- </div>
- </main>
- </body>
-</html>
+.stocks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.stock {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.stock h2 {
+  margin-top: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #ddd;
+  font-size: 14px;
+}
+
+
